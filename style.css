@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+/* Navigation changes when scrolling */
+nav.scrolled {
+    background: #222;
+    padding: 12px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.menu a:hover {
+    background: white;
+    color: #222;
+    border-radius: 5px;
+}
+
+/* Page Sections */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#home {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+}
+
+#about {
+    background: #f4f4f4;
+}
+
+#services {
+    background: #ddd;
+}
+
+#contact {
+    background: #222;
+    color: white;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav.scrolled {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu li {
+        margin-left: 3px;
+    }
+
+    .menu a {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
